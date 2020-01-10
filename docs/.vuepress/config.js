@@ -1,5 +1,5 @@
 module.exports = {
-    base: '/',
+    base: './',
     theme: 'reco',
     themeConfig: {
         // 博客配置
