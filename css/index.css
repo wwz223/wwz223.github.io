@@ -1,4 +1,5 @@
 body {
+  width: 100%;
   background: url("http://www.4399.com/images/p2016/p-bg.jpg") no-repeat center
     top;
 }
@@ -27,9 +28,8 @@ canvas {
 
 .game {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* background-color: red; */
+  padding-bottom: 100px;
 }
 .game .intro {
   width: 50%;
@@ -88,6 +88,14 @@ canvas {
   line-height: 30px;
   font-family: PingFangSC-Regular, PingFang SC;
   /* white-space: pre-wrap; */
+}
+
+.footer {
+  margin-top: 200px;
+  width: 100%;
+  /* flex: 1; */
+  height: 300px;
+  background: grey;
 }
 
 .controls {
