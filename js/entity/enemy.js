@@ -22,7 +22,6 @@ class Enemy extends alive {
     switch (this.direction) {
       case "up":
         i = this.index;
-        console.log('i',i)
         ctx.drawImage(
           gameImg.enemy[level - 1][i],
           this.x,

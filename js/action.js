@@ -86,7 +86,6 @@ canvas.onclick = function () {
 function setPlayCount() {
   if (curPhase !== PHASE_PLAY) {
     playCount = parseInt(document.getElementById("playCount").value);
-    console.log("payload", playCount);
   }
 }
 
