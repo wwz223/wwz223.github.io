@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myGame</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="game">
+      <!-- <div class="title">
+        <span>哆啦A梦大冒险</span>
+        <span id="time"></span>
+      </div> -->
+      <canvas id="canvas">
+        您的浏览器不支持canvas绘图！
+      </canvas>
+      <div class="controls">
+        <select id="playCount" onchange="setPlayCount()">
+          <option value="1">玩家数量（单人）</option>
+          <option value="2">玩家数量（双人）</option>
+        </select>
+        <select id="audioOpen" onchange="setAudio()">
+          <option value="1">游戏音效（开启）</option>
+          <option value="2">游戏音效（关闭）</option>
+        </select>
+        <button onclick="initGame()">首页</button>
+        <button onclick="reStart()">开始</button>
+
+        <button onclick="drawPause()">暂停</button>
+        <button onclick="drawContinue()">继续</button>
+        <button onclick="gameover()">结束</button>
+        <button onclick="reStart()">重新开始</button>
+        <button onclick="success()">游戏成功</button>
+        <!-- <button onclick=""></button> -->
+        <audio id="audio_bgm" controls="controls" src="./audio/bgm.mp3">
+          您的浏览器不支持 audio 标签。
+        </audio>
+        <audio id="audio_jinbi" controls="controls" src="./audio/jinbi.wav">
+          您的浏览器不支持 audio 标签。
+        </audio>
+      </div>
+      <div class="intro">
+        <div class="top">
+          <div class="top_before"></div>
+          <div class="top_title">游戏操作</div>
+        </div>
+        <div>
+          <div class="operation">
+            <div class="operation_top">
+              <div class="operation_before"></div>
+              <div class="operation_title">故事背景</div>
+            </div>
+            <div class="operation_text">
+              <div>在几百万年前的火星上，一群外星生物正要攻占火星，勇敢而充满正义的哆啦A梦和他的弟弟哆啦B梦为了保卫自己的家园，闯入外星生物的基地，与它们展开了一场激烈的搏斗...</div>
+            </div>
+          </div>
+        <div class="operation">
+          <div class="operation_top">
+            <div class="operation_before"></div>
+            <div class="operation_title">操作指南</div>
+          </div>
+          <div class="operation_text">
+            <img src="./img/screen/move.png" />
+          </div>
+        </div>
+        <div>
+          <div class="operation">
+            <div class="operation_top">
+              <div class="operation_before"></div>
+              <div class="operation_title">游戏目标</div>
+            </div>
+            <div class="operation_text">
+              <div>通过所有关卡（总共四关）</div>
+            </div>
+          </div>
+          <div>
+          <div class="operation">
+            <div class="operation_top">
+              <div class="operation_before"></div>
+              <div class="operation_title">游戏规则</div>
+            </div>
+            <div class="operation_text">
+              <div>
+                1、在所有的金币下面藏着一把通往下一关的钥匙，玩家需要找到钥匙并从通道进入下一关;</br>
+                2、游戏期间敌人数量会越来越多，而且每一关卡都有时间限制所以需要尽快通关;</br>
+                3、游戏期间触碰到敌人则游戏结束，如果有两个玩家，则该玩家进入自闭模式，需要队友走到身边的同时按下空格键即可将其救活，两个玩家全都自闭，则游戏结束;</br>
+                4、任意玩家找到钥匙，则通关大门打开，两人全都通过即进入下一关，如一人通过，另一人处于自闭状态，则自闭状态的玩家死亡，游戏继续；
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="div"></div>
+    <script src="./js/config/maps.js"></script>
+    <script src="./js/config/const.js"></script>
+    <script src="./js/config/game_img.js"></script>
+    <script src="./js/config/game_audio.js"></script>
+    <script src="./js/init_date.js"></script>
+    <script src="./js/init_game.js"></script>
+    <script src="./js/paint.js"></script>
+    <script src="./js/action.js"></script>
+    <script src="./js/keyClick.js"></script>
+    <script src="./js/gameEngine.js"></script>
+    <script src="./js/dao/alive.js"></script>
+    <script src="./js/entity/hero.js"></script>
+    <script src="./js/entity/enemy.js"></script>
+    <script src="./js/entity/block.js"></script>
+    <script src="./js/entity/praise.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

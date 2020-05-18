@@ -1,0 +1,98 @@
+body {
+  background: url("http://www.4399.com/images/p2016/p-bg.jpg") no-repeat center
+    top;
+}
+
+select,
+button {
+  font-size: 16px;
+  margin-left: 15px;
+  height: 40px;
+  background-color: rgb(38, 144, 206);
+  box-shadow: 9px 10px 6px #177285;
+  border-radius: 10px;
+}
+audio {
+  margin-left: 10px;
+  border-radius: 10px;
+  height: 50px;
+  display: none;
+}
+canvas {
+  width: 70%;
+  margin-left: 15%;
+  border: 2px solid black;
+  box-shadow: 9px 10px 6px #177285;
+}
+
+.game {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.game .intro {
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 30px;
+}
+.game .intro .top {
+  height: 50px;
+  box-sizing: border-box;
+  padding: 10px 0px;
+}
+.game .intro .top {
+  overflow: hidden;
+}
+.game .intro .top .top_before {
+  width: 10px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: green;
+  border-radius: 3px;
+  float: left;
+}
+.game .intro .top .top_title {
+  float: left;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+}
+.game .operation .operation_top {
+  padding: 10px 0;
+  overflow: hidden;
+}
+.game .operation_before {
+  margin-left: 30px;
+  margin-right: 10px;
+  background-color: green;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+  border-left: 10px solid green;
+  border-right: 0px;
+  float: left;
+}
+.game .operation_title {
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+}
+.game .operation .operation_text {
+  margin-left: 35px;
+}
+.game .operation .operation_text div {
+  font-size: 14px;
+  /* height: 30px; */
+  line-height: 30px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  /* white-space: pre-wrap; */
+}
+
+.controls {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
