@@ -53,10 +53,11 @@ function initBlockAndPraise() {
       }
     }
   }
+
   //随机使某个奖品为本关的钥匙
+  // praises[praises.length - 1].isKey = true;
   let number = Math.floor(Math.random() * praises.length);
-  praises[praises.length - 1].isKey = true;
-  // praises[number].isKey = true;
+  praises[number].isKey = true;
 }
 
 const initGame = function () {

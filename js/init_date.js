@@ -6,6 +6,7 @@ let intervalEngine = null; //定时器
 /******游戏配置*****/
 let curPhase = PHASE_DOWNLOAD; //游戏状态
 let audioOpen = true; //音效是否开启
+let gameDifficulty = DIFFICUT_EASY; //游戏难度
 let gameScore; //游戏分数
 let countDown; //游戏倒计时
 let count; //计数器，渲染次数

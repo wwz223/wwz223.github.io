@@ -12,7 +12,23 @@ class Praise {
   }
   draw() {
     if (this.isKey) {
-      ctx.drawImage(gameImg.praise[1], this.x, this.y, this.width, this.height);
+      if (gameDifficulty === DIFFICUT_EASY) {
+        ctx.drawImage(
+          gameImg.praise[1],
+          this.x,
+          this.y,
+          this.width,
+          this.height
+        );
+      } else if (gameDifficulty === DIFFICUT_HARD) {
+        ctx.drawImage(
+          gameImg.praise[0],
+          this.x,
+          this.y,
+          this.width,
+          this.height
+        );
+      }
     } else {
       ctx.drawImage(gameImg.praise[0], this.x, this.y, this.width, this.height);
     }

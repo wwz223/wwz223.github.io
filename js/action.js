@@ -89,6 +89,16 @@ function setPlayCount() {
   }
 }
 
+//选择游戏难度
+function setDifficulty() {
+  let value = parseInt(document.getElementById("gameDifficulty").value);
+  if (value === 1) {
+    gameDifficulty = DIFFICUT_EASY;
+  } else {
+    gameDifficulty = DIFFICUT_HARD;
+  }
+}
+
 //关闭或开启音效的点击事件
 function setAudio() {
   let value = parseInt(document.getElementById("audioOpen").value);

@@ -16,6 +16,10 @@
           <option value="1">玩家数量（单人）</option>
           <option value="2">玩家数量（双人）</option>
         </select>
+        <select id="gameDifficulty" onchange="setDifficulty()">
+          <option value="1">简单</option>
+          <option value="2">困难</option>
+        </select>
         <select id="audioOpen" onchange="setAudio()">
           <option value="1">游戏音效（开启）</option>
           <option value="2">游戏音效（关闭）</option>
@@ -99,9 +103,6 @@
       </div>
      
     </div>
-    
-    
-    
     <script src="./js/config/maps.js"></script>
     <script src="./js/config/const.js"></script>
     <script src="./js/config/game_img.js"></script>

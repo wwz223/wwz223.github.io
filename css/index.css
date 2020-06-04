@@ -48,7 +48,7 @@ canvas {
   width: 10px;
   height: 30px;
   margin-right: 10px;
-  background-color: green;
+  background-color: rgb(0, 128, 68);
   border-radius: 3px;
   float: left;
 }

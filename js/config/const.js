@@ -11,3 +11,7 @@ const PHASE_SUCCESS = 7; //游戏通关
 const PLAYER_ALIVE = 1;
 const PLAYER_DEAD = 2;
 
+/**********游戏难度等级****/
+const DIFFICUT_EASY = 1;
+const DIFFICUT_HARD = 2;
+
