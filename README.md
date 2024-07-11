@@ -1,5 +1,7 @@
 # 🍎 基于H5实现的哆啦A梦闯关小游戏
 
+<img width="1417" alt="image" src="https://github.com/wwz223/wwz223.github.io/assets/36815297/2b8cc6ca-6223-4c94-b4cd-ba21ece3dee9">
+
 
 ## 游戏链接
 > https://wwz223.github.io/
